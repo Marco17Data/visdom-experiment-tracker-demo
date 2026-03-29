@@ -1,0 +1,62 @@
+[
+  {
+    "run_name": "baseline-adam-1",
+    "model": "resnet18",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "optimizer": "adam",
+    "final_accuracy": 0.842,
+    "final_loss": 0.462,
+    "tag": "baseline"
+  },
+  {
+    "run_name": "baseline-sgd-1",
+    "model": "resnet18",
+    "learning_rate": 0.01,
+    "batch_size": 32,
+    "optimizer": "sgd",
+    "final_accuracy": 0.801,
+    "final_loss": 0.537,
+    "tag": "baseline"
+  },
+  {
+    "run_name": "tuned-adam-1",
+    "model": "resnet18",
+    "learning_rate": 0.0005,
+    "batch_size": 64,
+    "optimizer": "adam",
+    "final_accuracy": 0.861,
+    "final_loss": 0.428,
+    "tag": "tuned"
+  },
+  {
+    "run_name": "tuned-adamw-1",
+    "model": "vit-small",
+    "learning_rate": 0.0003,
+    "batch_size": 64,
+    "optimizer": "adamw",
+    "final_accuracy": 0.879,
+    "final_loss": 0.401,
+    "tag": "tuned"
+  },
+  {
+    "run_name": "exp-sgd-large-batch",
+    "model": "resnet34",
+    "learning_rate": 0.02,
+    "batch_size": 128,
+    "optimizer": "sgd",
+    "final_accuracy": 0.788,
+    "final_loss": 0.581,
+    "tag": "experiment"
+  },
+  {
+    "run_name": "optuna-trial-07",
+    "model": "vit-small",
+    "learning_rate": 0.0008,
+    "batch_size": 48,
+    "optimizer": "adamw",
+    "final_accuracy": 0.872,
+    "final_loss": 0.415,
+    "tag": "optuna"
+  }
+]
